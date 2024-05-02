@@ -1,7 +1,7 @@
 
-# UnMute
+# UnMuted
 
-Project UnMute is a Sign Language Recognising app developed by team Clair_AI consisting of 10th-grade students from Delhi Public School Bangalore North Cambridge. The project aims to help people with hearing or speaking disabilities communicate with the world effectively.
+Project UnMuted is a Sign Language Recognising app developed by team Clair_AI consisting of 10th-grade students from Delhi Public School Bangalore North Cambridge. The project aims to help people with hearing or speaking disabilities communicate with the world effectively.
 ## Deployment
 
 The application has two versions
