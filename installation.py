@@ -2,9 +2,9 @@
 
 import os
 
-dependenices = {"tensorflow":"tensorflow", "cv2":"opencv-python", "numpy":"numpy", "mediapipe":"mediapipe", "matplotlib":"matplotlib", "sklearn":"scikit-learn"}
+dependencies = {"tensorflow":"tensorflow", "cv2":"opencv-python", "numpy":"numpy", "mediapipe":"mediapipe", "matplotlib":"matplotlib", "sklearn":"scikit-learn"}
 
-for i in dependenices:
+for i in dependencies:
     try:
         import i
     except ModuleNotFoundError:
