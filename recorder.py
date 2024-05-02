@@ -5,7 +5,7 @@ import numpy as np
 import os
 from custom_funcs import extract_keypoints
 from custom_funcs import mediapipe_detection
-from custom_funcs import  draw_styled_landmarks
+from custom_funcs import  draw_landmarks
 from custom_funcs import mp_holistic
 
 
@@ -39,7 +39,7 @@ while True:
                     # Converting the frame recorded into a mediapipe usable image
                     image, results = mediapipe_detection(frame, holistic)
 
-                    draw_styled_landmarks(image, results)
+                    draw_landmarks(image, results)
                     
                     if frame_num == 0: 
                         cv2.putText(image, 'STARTING COLLECTION', (120,200), 
