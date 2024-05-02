@@ -8,7 +8,8 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 from tensorflow.keras.callbacks import TensorBoard
 
-DATA_PATH = os.path.join('MP_Data') 
+folder_name = input("Name of folder where signs are stored? ")
+DATA_PATH = os.path.join('{}'.format(folder_name)) 
 actions = np.array(os.listdir(DATA_PATH))
 no_sequences = 20
 sequence_length = 30
@@ -45,4 +46,5 @@ model.add(Dense(32, activation='relu'))
 model.add(Dense(actions.shape[0], activation='softmax'))
 model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
 model.fit(X_train, y_train, epochs=100, callbacks=[tb_callback])
-model.save('action1.h5')
+model_name = input("What would you like to name your model? ")
+model.save('{}.h5'.format(model_name))
