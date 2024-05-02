@@ -4,7 +4,7 @@
 Project UnMuted is a Sign Language Recognising app developed by team Clair_AI consisting of 10th-grade students from Delhi Public School Bangalore North Cambridge. The project aims to help people with hearing or speaking disabilities communicate with the world effectively.
 ## Deployment
 
-The application has two versions
+The application has two versions:
     1. EXE File
     2. Python Files
 
@@ -50,12 +50,14 @@ Once the initialization completes you can use the product. Run:
 ```cmd
 python product.py
 ```
+## Customize
+
+You can also train your own model to create an application. First use recorder.py to record your own signs. Each sign needs to be recorded 20 times. After recording a few signs use the train.py file to train the signs into a model. Before running train.py ensure you configure the model by changing the LSTM layers and LSTM units. Once the training reaches an accuracy of over 95% your model is ready. Then use the same configuration for the model in product.py as used in train.py and run the program to use your model.
 
 ## Message From Developers
 
 The project was made by three Grade 10 students - Kshipra Kashyap, Sai Juhith Paleti and Nishanth Alampally. The project is mainly based on the legacy version of the Mediapipe module developed by Google. The project will be updated as Mediapipe's new version is released in mid-2024. A GUI has also been made for the project but due to the incapability of Legacy Mediapipe's Holistic model and Tkinter, the GUI has not been implemented with the actual product. You can check out the GUI in the GUI folder.
 
-Feel free to modify the code and provide suggestions to the team. The project also has a file named recorder.py using which you can record your own signs. While recording ensure you sit in a well-lit room and your hands are clearly recorded by the camera. Then use train.py to convert all your signs into an AI model. Feel free to modify the model coded in train.py as per your preferences.
 ## Future Plans
 
 Clair_AI plans on continuing the project as soon as Mediapipe's new version is released. We plan to use ASLLVD and ASL-LEX - 2 large databases consisting of all signs in ASL to complete our project's first version. 
