@@ -10,15 +10,15 @@ The application has two versions:
 
 ## EXE Files
 
-To use the exe files download/clone the **APP EXE** and **MP_Data** folders in **either** Large_Dataset or Small_Dataset.
+To use the exe files download/clone the **APP EXE** and **MP_Data** folders in Small_Dataset.
 
 Open the APP EXE folder and enter the dist folder. You will find the EXE file there. Move the MP_Data folder downloaded earlier into the dist folder and then the exe is ready to be used.
 
-_Note:_ The Large_Dataset folder consists of 50 signs while the Small_Dataset consists of only 10 signs.
+_Note:_ The Large_Dataset folder consists of 50 signs while the Small_Dataset consists of only 10 signs. Large_Dataset does not have a trained model and needs to be trained yourself. Small_Dataset has a trained model.
 
 ## Python Files
 
-To use the .py files download/clone the **APP Python** and **MP_Data** folders in **either** Large_Dataset or Small_Dataset.
+To use the .py files download/clone the **APP Python** and **MP_Data** folders in Small_Dataset.
 
 Create a folder called Sign Language Recognition
 
@@ -44,7 +44,7 @@ To test if the device can detect your system camera the following needs to be ru
 ```cmd
 python testing.py
 ```
-If the program doesn't work then try changing 0 to 1 or 2 on line 6 in the testing.py file.
+If the program doesn't work, try changing 0 to 1 or 2 on line 6 in the testing.py file.
 
 Once the initialization completes you can use the product. Run:
 ```cmd
@@ -52,7 +52,7 @@ python product.py
 ```
 ## Customize
 
-You can also train your own model to create an application. First use recorder.py to record your own signs. Each sign needs to be recorded 20 times. After recording a few signs use the train.py file to train the signs into a model. Before running train.py ensure you configure the model by changing the LSTM layers and LSTM units. Once the training reaches an accuracy of over 95% your model is ready. Then use the same configuration for the model in product.py as used in train.py and run the program to use your model.
+You can also train your model to create an application. First, use recorder.py to record your own signs. Each sign needs to be recorded 20 times. After recording a few signs use the train.py file to train the signs into a model. Before running train.py ensure you configure the model by changing the LSTM layers and LSTM units. Once the training reaches an accuracy of over 95% your model is ready. Then use the same configuration for the model in product.py as used in train.py and run the program to use your model.
 
 ## Message From Developers
 
