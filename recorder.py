@@ -11,8 +11,9 @@ from custom_funcs import mp_holistic
 
 # Infinite loop allowing user to take breaks after recording specified actions
 while True:
-    
-    DATA_PATH = os.path.join('MP_Data') 
+
+    folder_name = input("What would you like to call the folder to save the signs in? ")
+    DATA_PATH = os.path.join('{}'.format(folder_name)) 
     actions = input(r"Enter your signs (seperate with ', '): ").split(", ")
     actions = np.array(actions)
     no_sequences = 20
