@@ -7,6 +7,8 @@ Project UnMuted is a Sign Language Recognising app developed by team Clair_AI co
 
 To use the .py files download/clone Small_Dataset.
 
+_Note:_ The Large_Dataset consists of 35 signs that have been recorded but not trained for a model. They can be trained using train.py. Small_Dataset consists of 11 signs.
+
 Create a folder called Sign Language Recognition
 
 Open the folder in cmd and run the following command 
