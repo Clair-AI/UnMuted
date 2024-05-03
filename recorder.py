@@ -5,7 +5,7 @@ import numpy as np
 import os
 from custom_funcs import extract_keypoints
 from custom_funcs import mediapipe_detection
-from custom_funcs import  draw_landmarks
+from custom_funcs import draw_landmarks
 from custom_funcs import mp_holistic
 
 
