@@ -36,6 +36,7 @@ log_dir = os.path.join('Logs')
 tb_callback = TensorBoard(log_dir=log_dir)
 
 # Creating and fitting the model
+# Use relu or sigmoid activation
 
 model = Sequential()
 model.add(LSTM(64, return_sequences=True, activation='relu', input_shape=(30,126)))
@@ -44,7 +45,9 @@ model.add(LSTM(64, return_sequences=False, activation='relu'))
 model.add(Dense(64, activation='relu'))
 model.add(Dense(32, activation='relu'))
 model.add(Dense(actions.shape[0], activation='softmax'))
-model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
-model.fit(X_train, y_train, epochs=100, callbacks=[tb_callback])
+
+model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categorical_accuracy']) # Use Adam or Adamax optimizer
+model.fit(X_train, y_train, epochs=1000, callbacks=[tb_callback]) # Try changing number of epochs if model reaches required accuracy quickly
+
 model_name = input("What would you like to name your model? ")
-model.save('{}.h5'.format(model_name))
+model.save('{}.keras'.format(model_name))
