@@ -8,6 +8,8 @@ The application has two versions:
     1. EXE File
     2. Python Files
 
+**Note:** The model has a chance of not working in your system. This issue of Tensorflow has been reported multiple times on the internet where a model doesn't work in another system. In that case, use train.py to train the model. Read the section on **Customization** to understand how to do it.
+
 ## EXE Files
 
 To use the exe files download/clone the **APP EXE** and **MP_Data** folders in Small_Dataset.
@@ -52,7 +54,7 @@ python product.py
 ```
 ## Customize
 
-You can also train your model to create an application. First, use recorder.py to record your own signs. Each sign needs to be recorded 20 times. After recording a few signs use the train.py file to train the signs into a model. Before running train.py ensure you configure the model by changing the LSTM layers and LSTM units. Once the training reaches an accuracy of over 95% your model is ready. Then use the same configuration for the model in product.py as used in train.py and run the program to use your model.
+You can also train your model to create an application. First, use recorder.py to record your own signs. Each sign needs to be recorded 20 times. After recording a few signs use the train.py file to train the signs into a model. Before running train.py ensure you configure the model by changing the LSTM layers and LSTM units. Once the training reaches an accuracy of over 95% your model is ready. Then use the same configuration for the model in product.py as used in train.py and run the program to use your model. While running train.py take a look at Categorical_Accuracy to see how accurate the model is while training.
 
 ## Message From Developers
 
